@@ -43,7 +43,6 @@ public class TestSuiteByExcel {
 		int testCasesCount = ExcelUtil.getRowCount(Constants.SHEET_TESTSUITE);
 		int sucCount = 0;//成功个数
 		int failCount = 0;//失败个数
-		//使用for循环，执行所有标记为"y"的测试用例
 		for(int testCaseNo = 1; testCaseNo <= testCasesCount; testCaseNo++){
 			//读取“测试用例集合”Sheet中每行的测试用例序号
 			testCaseID = ExcelUtil.getCellData(Constants.SHEET_TESTSUITE, testCaseNo, Constants.COL_TESTCASEID);
