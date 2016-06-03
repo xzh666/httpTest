@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: pu.hui.httpTest.HttpClientTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.699 sec <<< FAILURE!
+Method(pu.hui.httpTest.HttpClientTest)  Time elapsed: 0.325 sec  <<< FAILURE!
+org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at pu.hui.httpTest.HttpClientTest.Method(HttpClientTest.java:23)
+Caused by: org.apache.http.ProtocolException: Target host is not specified
+	at org.apache.http.impl.conn.DefaultRoutePlanner.determineRoute(DefaultRoutePlanner.java:70)
+	at org.apache.http.impl.client.InternalHttpClient.determineRoute(InternalHttpClient.java:124)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	... 36 more
+

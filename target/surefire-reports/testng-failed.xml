@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [pu.hui.httpTest.HttpClientTest]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="pu.hui.httpTest.HttpClientTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="pu.hui.httpTest.HttpClientTest">
+        <methods>
+          <include name="Method"/>
+        </methods>
+      </class> <!-- pu.hui.httpTest.HttpClientTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [pu.hui.httpTest.HttpClientTest] -->
