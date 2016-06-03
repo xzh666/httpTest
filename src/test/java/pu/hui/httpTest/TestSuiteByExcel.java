@@ -44,6 +44,7 @@ public class TestSuiteByExcel {
 		int sucCount = 0;//成功个数
 		int failCount = 0;//失败个数
 		for(int testCaseNo = 1; testCaseNo <= testCasesCount; testCaseNo++){
+			//读取“测试用例集合”Sheet中每行的测试用例序号1111111111111111
 			testCaseID = ExcelUtil.getCellData(Constants.SHEET_TESTSUITE, testCaseNo, Constants.COL_TESTCASEID);
 			//读取“测试用例集合”Sheet中每行的是否运行列中的值
 			testCaseRunFlag = ExcelUtil.getCellData(Constants.SHEET_TESTSUITE, testCaseNo, Constants.COL_RUNFLAG);
